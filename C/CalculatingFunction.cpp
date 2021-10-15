@@ -2,8 +2,10 @@
 using namespace std;
 
 int main(){
-  double n;
+  long long n;
   cin>>n;
-  long long res = (floor(n/2)*(floor(n/2)+1)-ceil(n/2)*ceil(n/2));
-  cout<<res<<endl;
+  if(n%2==0)
+    cout<<n/2<<endl;
+  else 
+    cout<<(n/2)-n<<endl;
 }
